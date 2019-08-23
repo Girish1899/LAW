@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="NVS, N.V. Srinivasan., Srinivasan, NVS & Associates, law firm, India law firm, law firms, Indian law firm, Indian law firms, legal firm, legal firms, legal firms India, Indian legal firms, legal process outsourcing, arbitration, corporate law, corporate law India, securities law, Securities law India, central excise and customs, central excise and customs India, real estate, real estate India, property management legal problems, property management India, economic laws India, economic laws, cyber laws, information security, cyber laws India, Information securities India ,international trade, international trade laws, direct taxes, indirect taxes, consumer safety, product safety, intellectual property, trademark, patents, copyright, trade design, banking law, insurance law, banking, insurance, corporate liaison, compliance management, criminal law, general finance, cost accounting, management accounting, Australia, law firms Australia, Indo-Australian law firm, law internship, law internship in India, jobs, lawyers, advocates.">
+<title>NVS & Associates - Enquiry</title>
+<style type="text/css">
+<!--
+body {
+background-color: #638ca2;
+margin-left: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+background-image: url(images/topbg.gif);
+background-repeat: repeat-x;
+}
+-->
+</style>
+<link href="css/nvs.css" rel="stylesheet" type="text/css" />
+<script language="javascript">
+function echeck(str) {
+
+var at="@"
+
+var dot="."
+
+var lat=str.indexOf(at)
+
+var lstr=str.length
+
+var ldot=str.indexOf(dot)
+
+if (str.indexOf(at)==-1){
+
+alert("Invalid E-mail ID")
+
+return false
+
+}
+
+
+
+if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+
+alert("Invalid E-mail ID")
+
+return false
+
+}
+
+
+
+if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+
+alert("Invalid E-mail ID")
+
+return false
+
+}
+
+
+
+if (str.indexOf(at,(lat+1))!=-1){
+
+alert("Invalid E-mail ID")
+
+return false
+
+}
+
+
+
+if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+
+alert("Invalid E-mail ID")
+
+return false
+
+}
+
+
+
+if (str.indexOf(dot,(lat+2))==-1){
+
+alert("Invalid E-mail ID")
+
+return false
+
+}
+
+
+
+if (str.indexOf(" ")!=-1){
+
+alert("Invalid E-mail ID")
+
+return false
+
+}
+
+
+
+return true					
+
+}
+
+
+
+function mailcheck()
+
+{
+
+
+
+var emailID=document.forms[0].email;
+
+
+
+if ((emailID.value==null)||(emailID.value==""))
+
+{
+
+alert("E-Mail field is empty");
+
+emailID.focus()
+
+return false
+
+}
+
+if (echeck(emailID.value)==false)
+
+{
+
+emailID.value=""
+
+emailID.focus()
+
+return false
+
+}
+
+}
+
+
+
+var digits = "0123456789";
+
+// non-digit characters which are allowed in phone numbers
+
+var phoneNumberDelimiters = "()- ";
+
+// characters which are allowed in international phone numbers
+
+// (a leading + is OK)
+
+var validWorldPhoneChars = phoneNumberDelimiters + "+";
+
+// Minimum no of digits in an international phone no.
+
+var minDigitsInIPhoneNumber = 10;
+
+
+
+function isInteger(s)
+
+{   var i;
+
+for (i = 0; i < s.length; i++)
+
+{   
+
+// Check that current character is number.
+
+var c = s.charAt(i);
+
+if (((c < "0") || (c > "9"))) return false;
+
+}
+
+// All characters are numbers.
+
+return true;
+
+}
+
+
+
+function stripCharsInBag(s, bag)
+
+{   var i;
+
+var returnString = "";
+
+// Search through string's characters one by one.
+
+// If character is not in bag, append to returnString.
+
+for (i = 0; i < s.length; i++)
+
+{   
+
+// Check that current character isn't whitespace.
+
+var c = s.charAt(i);
+
+if (bag.indexOf(c) == -1) returnString += c;
+
+}
+
+return returnString;
+
+}
+
+
+
+function checkInternationalPhone(strPhone){
+
+s=stripCharsInBag(strPhone,validWorldPhoneChars);
+
+return (isInteger(s) && s.length >= minDigitsInIPhoneNumber);
+
+}
+
+
+
+function ValidateForm(){
+
+var Phone=document.forms[0].phone
+
+
+
+if ((Phone.value==null)||(Phone.value=="")){
+
+alert("Please Enter your Phone Number")
+
+Phone.focus()
+
+return false
+
+}
+
+if (checkInternationalPhone(Phone.value)==false){
+
+alert("Please Enter a Valid Phone Number")
+
+Phone.value=""
+
+Phone.focus()
+
+return false
+
+}
+
+return true
+
+}
+
+
+
+function isValidURL(url){
+
+var RegExp = /^(([\w]+:)?\/\/)?(([\d\w]|%[a-fA-f\d]{2,2})+(:([\d\w]|%[a-fA-f\d]{2,2})+)?@)?([\d\w][-\d\w]{0,253}[\d\w]\.)+[\w]{2,4}(:[\d]+)?(\/([-+_~.\d\w]|%[a-fA-f\d]{2,2})*)*(\?(&?([-+_~.\d\w]|%[a-fA-f\d]{2,2})=?)*)?(#([-+_~.\d\w]|%[a-fA-f\d]{2,2})*)?$/;
+
+if(RegExp.test(url)){
+
+return true;
+
+}else{
+
+return false;
+
+}
+
+}
+
+
+
+function isValidEmail(email){
+
+var RegExp = /^((([a-z]|[0-9]|!|#|$|%|&|'|\*|\+|\-|\/|=|\?|\^|_|`|\{|\||\}|~)+(\.([a-z]|[0-9]|!|#|$|%|&|'|\*|\+|\-|\/|=|\?|\^|_|`|\{|\||\}|~)+)*)@((((([a-z]|[0-9])([a-z]|[0-9]|\-){0,61}([a-z]|[0-9])\.))*([a-z]|[0-9])([a-z]|[0-9]|\-){0,61}([a-z]|[0-9])\.)[\w]{2,4}|(((([0-9]){1,3}\.){3}([0-9]){1,3}))|(\[((([0-9]){1,3}\.){3}([0-9]){1,3})\])))$/
+
+if(RegExp.test(email)){
+
+return true;
+
+}else{
+
+return false;
+
+}
+
+}
+
+function checkField(){
+
+var frm = document.forms[0], error = "";
+
+if(!isValidURL(frm.website.value))
+
+{
+
+error += "Please enter a valid Website URL\n";
+
+}
+
+if(!isValidEmail(frm.email.value))
+
+{
+
+error += 'Please enter a valid Email\n';
+
+}
+
+if(error != "")
+
+{
+
+alert(error);
+
+return false;
+
+}else{
+
+return true;
+
+}
+
+} 
+
+
+
+function IsEmpty(aTextField) {
+
+if ((aTextField.value.length==0) ||
+
+(aTextField.value==null)) {
+
+return true;
+
+}
+
+else { return false; }
+
+}	
+
+
+
+function IsNumeric(sText)
+
+
+
+{
+
+var ValidChars = "0123456789.";
+
+var IsNumber=true;
+
+var Char;
+
+
+
+
+
+for (i = 0; i < sText.length && IsNumber == true; i++) 
+
+{ 
+
+Char = sText.charAt(i); 
+
+if (ValidChars.indexOf(Char) == -1) 
+
+{
+
+IsNumber = false;
+
+}
+
+}
+
+return IsNumber;
+
+}
+
+
+function ValidateForm(form)
+
+{
+
+if (!IsNumeric(form.phone.value)) 
+
+{ 
+
+alert('Please enter only numbers in the Phone Number field') 
+
+form.phone.focus(); 
+
+return false; 
+
+} 
+
+
+
+if(IsEmpty(form.name)) 
+
+{ 
+
+alert('Please enter your First Name') 
+
+form.name.focus(); 
+
+return false; 
+
+}
+
+if(IsEmpty(form.lastname)) 
+
+{ 
+
+alert('Please enter your Last Name') 
+
+form.name.focus(); 
+
+return false; 
+
+}
+if(IsEmpty(form.company)) 
+
+{ 
+
+alert('Please enter your First Name') 
+
+form.name.focus(); 
+
+return false; 
+
+}
+if(IsEmpty(form.country)) 
+
+{ 
+
+alert('Please select your country of residence') 
+
+form.country.focus(); 
+
+return false; 
+
+}
+
+
+
+if(IsEmpty(form.email)) 
+
+{ 
+
+alert('Please enter your E-Mail id') 
+
+form.email.focus(); 
+
+return false; 
+
+} 
+
+if(IsEmpty(form.message)) 
+
+{ 
+
+alert('Please enter your Mesage/Enquiry Details') 
+
+form.email.focus(); 
+
+return false; 
+
+} 
+
+
+var frm = document.forms[0], error = "";
+
+
+if(!isValidEmail(frm.email.value))
+
+{
+
+error += 'Please enter a valid Email\n';
+
+}
+
+if(error != "")
+
+{
+
+alert(error);
+
+return false;
+
+}else{
+
+return true;
+
+}
+
+return true;
+
+}
+
+</script>
+</head>
+<body>
+<!-- ImageReady Slices (nvs.psd) -->
+<table width="927" height="561" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF">
+<tr class="topbg">
+<td><img src="images/index_01.jpg" width="281" height="94" alt="" /></td>
+<td  width="646" height="94" align="right" valign="bottom">
+<table width="643" height="29" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><img src="images/nvs_02_01.gif" width="11" height="29" alt=""></td>
+<td width="622" height="29" class="menubg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr class="menu">
+<td align="center" valign="middle"><a href="welcome.html">HOME</a></td>
+<td><img src="images/menu-sep.gif" alt="HOME" width="3" height="29" /></td>
+<td align="center"><a href="aboutus.html">ABOUT US</a> </td>
+<td><img src="images/menu-sep.gif" alt="about us" width="3" height="29" /></td>
+<td align="center"><a href="services.html">SERVICES</a></td>
+<td><img src="images/menu-sep.gif" alt="services" width="3" height="29" /></td>
+<td align="center"><a href="professionals.html">PROFESSIONALS</a></td>
+<td><img src="images/menu-sep.gif" alt="professionals" width="3" height="29" /></td>
+<td align="center"><a href="careers.html">CAREERS</a></td>
+<td><img src="images/menu-sep.gif" alt="contact" width="3" height="29" /></td>
+<td align="center"><a href="contact.html">CONTACT</a></td>
+</tr>
+</table>
+</td>
+<td><img src="images/nvs_02_03.gif" width="10" height="29" alt=""></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr width="281" align="left" valign="top">
+<td height="175" colspan="2" align="left" valign="top" bgcolor="#DEECF5"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="175" align="left" valign="top"><img src="images/enquiry_banner.jpg" width="927" height="175" /></td>
+</tr>
+</table></td>
+</tr>
+<tr >
+<td width="927" height="272" colspan="2" align="center" valign="top" class="padall">
+<div style="border:3px solid #F0F0F0; width:98%;" class="padall">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="22" colspan="2" align="left" valign="middle" class="subheading2">Enquiry </td>
+</tr>
+<tr>
+<td height="10" align="left" valign="middle" class="stline"></td>
+<td height="10" align="left" valign="middle"></td>
+</tr>
+<tr>
+<td width="78%" height="22" align="left" valign="top">
+<form action="enquiry.php" method="post" onsubmit="javascript:return ValidateForm(this)">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="32" colspan="3" class="subheading4"><strong>Post your enquiries now: </strong></td>
+</tr>
+<tr>
+<td width="30%" height="25" align="left" class="justi">First name  <span class="justi_red">*</span> </td>
+<td width="3%" align="left">:</td>
+<td width="67%" align="left"><input type="text" name="name" id="name" class="input01" /></td>
+</tr>
+<tr>
+  <td height="25" class="justi">Last name  <span class="justi_red">*</span> </td>
+  <td align="left">:</td>
+  <td align="left"><input type="text" name="lastname" id="lastname" class="input01" /></td>
+</tr>
+<tr>
+  <td height="25" class="justi">Company name  <span class="justi_red">*</span> </td>
+  <td align="left">:</td>
+  <td align="left"><input type="text" name="company" id="company" class="input01" /></td>
+</tr>
+<tr>
+<td height="25" class="justi">Contact number </td>
+<td align="left">:</td>
+<td align="left"><input type="text" name="phone" id="phone" class="input01" /></td>
+</tr>
+<tr>
+  <td height="25" align="left" class="justi">Country of residence <span class="justi_red">*</span> </td>
+  <td align="left">:</td>
+  <td align="left"><select  size="1" id="country" name="country">
+<option value="India" >India</option>
+<option value="United States of America" >United States of America</option>
+<option value="United Arab Emirates" >United Arab Emirates</option>
+<option value="Malaysia" >Malaysia</option>
+<option value="United Kingdom" >United Kingdom</option>
+
+<option value="Australia" >Australia</option>
+<option value="Saudi Arabia" >Saudi Arabia</option>
+<option value="Canada" >Canada</option>
+<option value="Singapore" >Singapore</option>
+<option value="Kuwait" >Kuwait</option>
+<option value="">-----------------------</option>
+
+<option value="Afghanistan">Afghanistan</option><option value="Albania">Albania</option><option value="3">Algeria</option><option value="4">American Samoa</option><option value="5">Andorra</option><option value="6">Angola</option><option value="7">Anguilla</option><option value="8">Antarctica</option><option value="9">Antigua and Barbuda</option><option value="10">Argentina</option><option value="11">Armenia</option><option value="12">Aruba</option><option value="13">Australia</option><option value="14">Austria</option><option value="15">Azerbaijan</option><option value="16">Bahamas</option><option value="17">Bahrain</option><option value="18">Bangladesh</option><option value="19">Barbados</option><option value="20">Belarus</option><option value="21">Belgium</option><option value="22">Belize</option><option value="23">Benin</option><option value="24">Bermuda</option><option value="25">Bhutan</option><option value="26">Bolivia</option><option value="27">Bosnia and Herzegovina</option><option value="28">Botswana</option><option value="29">Bouvet Island</option><option value="30">Brazil</option><option value="31">British Indian Ocean Territory</option><option value="32">British Virgin Islands</option><option value="33">Brunei</option><option value="34">Bulgaria</option><option value="35">Burkina Faso</option><option value="36">Burundi</option><option value="37">Cambodia</option><option value="38">Cameroon</option><option value="39">Canada</option><option value="40">Cape Verde</option><option value="41">Cayman Islands</option><option value="42">Central African Republic</option><option value="43">Chad</option><option value="44">Chile</option><option value="45">China</option><option value="46">Christmas Island</option><option value="47">Cocos Islands</option><option value="48">Colombia</option><option value="49">Comoros</option><option value="50">Congo</option><option value="51">Cook Islands</option><option value="52">Costa Rica</option><option value="53">Croatia</option><option value="54">Cuba</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="57">Denmark</option><option value="58">Djibouti</option><option value="59">Dominica</option><option value="60">Dominican Republic</option><option value="61">East Timor</option><option value="62">Ecuador</option><option value="63">Egypt</option><option value="64">El Salvador</option><option value="65">Equatorial Guinea</option><option value="66">Eritrea</option><option value="67">Estonia</option><option value="68">Ethiopia</option><option value="69">Falkland Islands</option><option value="70">Faroe Islands</option><option value="71">Fiji</option><option value="72">Finland</option><option value="73">France</option><option value="74">French Guiana</option><option value="75">French Polynesia</option><option value="76">French Southern Territories</option><option value="77">Gabon</option><option value="78">Gambia</option><option value="79">Georgia</option><option value="80">Germany</option><option value="81">Ghana</option><option value="82">Gibraltar</option><option value="83">Greece</option><option value="84">Greenland</option><option value="85">Grenada</option><option value="86">Guadeloupe</option><option value="87">Guam</option><option value="88">Guatemala</option><option value="89">Guinea</option><option value="90">Guinea-Bissau</option><option value="91">Guyana</option><option value="92">Haiti</option><option value="93">Heard and McDonald Islands</option><option value="94">Honduras</option><option value="95">Hong Kong</option><option value="96">Hungary</option><option value="97">Iceland</option><option value="India">India</option><option value="99">Indonesia</option><option value="100">Iran</option><option value="101">Iraq</option><option value="102">Ireland</option><option value="103">Israel</option><option value="104">Italy</option><option value="105">Ivory Coast</option><option value="106">Jamaica</option><option value="107">Japan</option><option value="108">Jordan</option><option value="109">Kazakhstan</option><option value="110">Kenya</option><option value="111">Kiribati</option><option value="112">Korea, North</option><option value="113">Korea, South</option><option value="114">Kuwait</option><option value="115">Kyrgyzstan</option><option value="116">Laos</option><option value="117">Latvia</option><option value="118">Lebanon</option><option value="119">Lesotho</option><option value="120">Liberia</option><option value="121">Libya</option><option value="122">Liechtenstein</option><option value="123">Lithuania</option><option value="124">Luxembourg</option><option value="125">Macau</option><option value="126">Macedonia</option><option value="127">Madagascar</option><option value="128">Malawi</option><option value="129">Malaysia</option><option value="130">Maldives</option><option value="131">Mali</option><option value="132">Malta</option><option value="133">Marshall Islands</option><option value="134">Martinique</option><option value="135">Mauritania</option><option value="136">Mauritius</option><option value="137">Mayotte</option><option value="138">Mexico</option><option value="139">Micronesia, Federated States of</option><option value="140">Moldova</option><option value="141">Monaco</option><option value="142">Mongolia</option><option value="143">Montserrat</option><option value="144">Morocco</option><option value="145">Mozambique</option><option value="146">Myanmar</option><option value="147">Namibia</option><option value="148">Nauru</option><option value="149">Nepal</option><option value="150">Netherlands</option><option value="151">Netherlands Antilles</option><option value="152">New Caledonia</option><option value="153">New Zealand</option><option value="154">Nicaragua</option><option value="155">Niger</option><option value="156">Nigeria</option><option value="157">Niue</option><option value="158">Norfolk Island</option><option value="159">Northern Mariana Islands</option><option value="160">Norway</option><option value="161">Oman</option><option value="162">Pakistan</option><option value="163">Palau</option><option value="164">Panama</option><option value="165">Papua New Guinea</option><option value="166">Paraguay</option><option value="167">Peru</option><option value="168">Philippines</option><option value="169">Pitcairn Island</option><option value="170">Poland</option><option value="171">Portugal</option><option value="172">Puerto Rico</option><option value="173">Qatar</option><option value="174">Reunion</option><option value="175">Romania</option><option value="176">Russia</option><option value="177">Rwanda</option><option value="178">S. Georgia and S. Sandwich Isls.</option><option value="179">Saint Kitts & Nevis</option><option value="180">Saint Lucia</option><option value="181">Saint Vincent and The Grenadines</option><option value="182">Samoa</option><option value="183">San Marino</option><option value="184">Sao Tome and Principe</option><option value="185">Saudi Arabia</option><option value="186">Senegal</option><option value="187">Seychelles</option><option value="188">Sierra Leone</option><option value="189">Singapore</option><option value="190">Slovakia</option><option value="191">Slovenia</option><option value="192">Somalia</option><option value="193">South Africa</option><option value="194">Spain</option><option value="195">Sri Lanka</option><option value="196">St. Helena</option><option value="197">St. Pierre and Miquelon</option><option value="198">Sudan</option><option value="199">Suriname</option><option value="200">Svalbard and Jan Mayen Islands</option><option value="201">Swaziland</option><option value="202">Sweden</option><option value="203">Switzerland</option><option value="204">Syria</option><option value="205">Taiwan</option><option value="206">Tajikistan</option><option value="207">Tanzania</option><option value="208">Thailand</option><option value="209">Togo</option><option value="210">Tokelau</option><option value="211">Tonga</option><option value="212">Trinidad and Tobago</option><option value="213">Tunisia</option><option value="214">Turkey</option><option value="215">Turkmenistan</option><option value="216">Turks and Caicos Islands</option><option value="217">Tuvalu</option><option value="218">Uganda</option><option value="219">Ukraine</option><option value="220">United Arab Emirates</option><option value="221">United Kingdom</option><option value="222">United States of America</option><option value="223">Uruguay</option><option value="224">Uzbekistan</option><option value="225">Vanuatu</option><option value="226">Vatican City</option><option value="227">Venezuela</option><option value="228">Vietnam</option><option value="229">Virgin Islands</option><option value="230">Wallis and Futuna Islands</option><option value="231">Western Sahara</option><option value="232">Yemen</option><option value="233">Yugoslavia (Former)</option><option value="234">Zaire</option><option value="235">Zambia</option><option value="236">Zimbabwe</option>						</select></td>
+</tr>
+<tr>
+<td height="25" align="left" class="justi">Email ID <span class="justi_red">*</span> </td>
+<td align="left">:</td>
+<td align="left"><input type="text" name="email" id="email" class="input01" /></td>
+</tr>
+<tr>
+<td height="80" align="left" class="justi">Message <span class="justi_red">*</span></td>
+<td align="left">:</td>
+<td align="left"><textarea name="message" id="message" class="txtarea01"></textarea></td>
+</tr>
+<tr>
+<td height="29" align="left">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left"><input type="submit" name="Submit" value="" class="submit" /></td>
+</tr>
+<tr>
+<td height="25">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="right" class="subheading4" style="font-size:10px; color:#666666;"><span class="subheading4red">(*) Fields are mandatory</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+</table>
+</form>
+</td>
+<td width="22%" align="center" valign="top">&nbsp;</td>
+</tr>
+
+<tr>
+<td height="10" align="left" valign="middle" class="stline"></td>
+<td height="10" align="left" valign="middle"></td>
+</tr>
+
+
+<tr>
+<td height="22" align="left" valign="top">&nbsp;</td>
+<td height="22">&nbsp;</td>
+</tr>
+</table>
+
+</div>
+</td>
+</tr>
+<tr class="footerbg">
+<td colspan="2" width="927" height="26"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="53%" class="footer">&nbsp;&nbsp;Copyright ©  NVS & Associates reserved.</td>
+<td width="47%" align="right" valign="middle" class="footer"><a href="privacy.html">Privacy</a>   |   <a href="disclaimer.html">Disclaimer</a>   |   <a href="enquiry.html">Enquiry</a>   |   <a href="contact.html">Contact</a> &nbsp;&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- End ImageReady Slices -->
+
+</body>
+</html>

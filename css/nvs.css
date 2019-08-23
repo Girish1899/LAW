@@ -1,0 +1,60 @@
+/* CSS Document */
+body {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#000000; text-decoration:none; line-height:18px;}
+.topbg {background:url(../images/topbg.gif) repeat-x;}
+.menubg {background:url(../images/menubg.gif) repeat-x;}
+.footerbg {background:url(../images/footerbg.gif) repeat-x;}
+.menu a{ font-size:12px; color:#FFFFFF; font-weight:normal; text-decoration:none;}
+.menu a:hover{ font-size:12px; color:#006399; font-weight:normal; text-decoration:none;}
+.justi {text-align:justify;}
+.pdglr {padding-left:10px; padding-right:10px;}
+.padall {padding:5px;}
+.link a {font-size:12px; color:#AE6600; font-weight:bold; text-decoration:underline;}
+.link a:hover {font-size:12px; color:#035988; font-weight:bold; text-decoration:none;}
+.link2 a {font-size:12px; color:#AE6600; font-weight:normal; text-decoration:underline;}
+.link2 a:hover {font-size:12px; color:#035988; font-weight:normal; text-decoration:none;}
+.link3 a {font-size:12px; color:#035987; font-weight:normal; text-decoration:none; font-weight:bold;}
+.link3 a:hover {font-size:12px; color:#363636; font-weight:normal; text-decoration:none; font-weight:bold;}
+.link4 a {font-size:12px; color:#333333; font-weight:normal; text-decoration:none; font-weight:bold;}
+.link4 a:hover {font-size:12px; color:#D79614; font-weight:normal; text-decoration:none; font-weight:bold;}
+.footer {font-size:11px; color:#cccccc; text-decoration:none;}
+.footer a {font-size:11px; color:#FFFFFF; text-decoration:none;}
+.footer a:hover {font-size:11px; color:#DEECF5; text-decoration:none;}
+.subheading {font-size:15px; color: #333333; font-weight:bold;}
+.subheading2 {font-size:16px; color: #035987; font-weight:bold;}
+.subheading3 {font-size:12px; color: #035987; font-weight:bold;}
+.subheading4 {font-size:12px; color: #333333; font-weight:bold;}
+.subheading5 {font-size:15px; color: #035987; font-weight:bold;}
+.stline {background:url(../images/st-line.gif) repeat-x;}
+.dothoriz {background:url(../images/dot-horiz.gif) repeat-x;}
+.dotverti {background:url(../images/dot-verti.gif) repeat-y;}
+.input01 { font-family:Verdana, Arial, Helvetica, sans-serif;width:224px; height:16px; color: #000000; text-decoration:none; text-align:left; vertical-align:top; padding:0px; font-size: 12px; padding-left:3px;}
+.txtarea01 { font-family:Verdana, Arial, Helvetica, sans-serif;width:440px; height:70px; color:#000000; text-decoration:none; text-align:left; padding:0px; line-height:16px;font-size: 12px; padding-left:3px; }
+.submit {background:url(../images/submit.gif) no-repeat; width:86px; height:18px; border:0px; cursor:pointer;}
+
+.justi_red {
+	text-align:justify;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #FF0000;
+	text-decoration: none;
+}
+.subheading4red {
+	font-size:10px;
+	color: #FF0000;
+	font-weight:bold;
+	font-family: Verdana;
+}
+.branch_link {
+	font-size:12px;
+	color: #035987;
+	font-weight:bold;
+	font-family: Verdana;
+	text-decoration: none;
+}
+.branch_head {
+	font-size:13px;
+	color: #000000;
+	font-weight:bold;
+	font-family: Verdana;
+	text-decoration: none;
+}

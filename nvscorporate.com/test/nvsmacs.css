@@ -1,0 +1,143 @@
+.menu_text {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #e6eae6;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+.footer_text1 {
+
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	color: #e6eae6;
+	text-decoration: none;
+	letter-spacing: normal;
+}
+.body_text_justi {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #403e3e;
+	text-decoration: none;
+	letter-spacing: normal;
+	text-align: justify;
+	vertical-align: middle;
+	line-height: 16px;
+}
+.more_link {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #051868;
+	text-decoration: none;
+}
+.sub_heading {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #051868;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+.body_text_bold {
+
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #403e3e;
+	text-decoration: none;
+	letter-spacing: normal;
+	text-align: justify;
+	line-height: 16px;
+}
+
+.body_text_und {
+
+	font-family: Verdana;
+	font-size: 11px;
+	color: #403e3e;
+	text-decoration: underline;
+	letter-spacing: normal;
+	line-height: 16px;
+}.body_text_red {
+
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FF0000;
+	text-decoration: none;
+	letter-spacing: normal;
+	text-align: justify;
+	vertical-align: middle;
+	line-height: 16px;
+}
+.submit_image {
+	background-image: url(images/submit_button.jpg);
+}
+.home_body_text {
+
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #403e3e;
+	text-decoration: none;
+	letter-spacing: normal;
+	text-align: justify;
+	vertical-align: top;
+	line-height: 16px;
+}
+.blue_side_link {
+
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #051868;
+	text-decoration: none;
+	letter-spacing: normal;
+	text-align: justify;
+	vertical-align: middle;
+	line-height: 16px;
+}
+.blue_bold {
+
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	color: #051868;
+	text-decoration: none;
+}
+.blue_heading {
+
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #051868;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+.centre_bold {
+
+
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #403e3e;
+	text-decoration: none;
+	letter-spacing: normal;
+	text-align: center;
+	line-height: 16px;
+}
+.body_text_italics {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #403e3e;
+	text-decoration: none;
+	letter-spacing: normal;
+	text-align: justify;
+	vertical-align: middle;
+	line-height: 16px;
+	font-style: italic;
+}
